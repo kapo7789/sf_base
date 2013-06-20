@@ -16,12 +16,10 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-    	$shit = array(
-    			'stuff'=>'shit',
-    			'stuff2'=>'shit2',
-    			'stuff3'=>'shit3',
-    		);
-        return $this->render('FrontBundle:Default:index.html.php',array('shit'=>$shit));
+        $cats = $this->getDoctrine()
+                ->getRepository('FrontBundle:Category')
+                ->findAll();
+        return $this->render('FrontBundle:Default:index.html.php',array('cats'=>$cats));
     }
 
     /**

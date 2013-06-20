@@ -3,7 +3,7 @@
 Hello fucker!
 
 <ul>
-<?php foreach($shit as $k=>$v): ?>
-	<li><?php echo "$k - $v"; ?></li>
+<?php foreach($cats as $cat): ?>
+	<li><?php echo $cat->getName(); ?></li>
 <?php endforeach; ?>
 </ul>
