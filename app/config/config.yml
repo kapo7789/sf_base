@@ -38,6 +38,11 @@ assetic:
         #yui_css:
         #    jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
 
+knp_menu:
+    twig: false  # use "twig: false" to disable the Twig extension and the TwigRenderer
+    templating: true # if true, enables the helper for PHP templates
+    default_renderer: list # The renderer to use, list is also available by default
+
 # Doctrine Configuration
 doctrine:
     dbal:

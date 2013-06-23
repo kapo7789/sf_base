@@ -1,5 +1,5 @@
 <?php $view->extend('::base.html.php') ?>
 
-<h1>Hello Application</h1>
+<?php echo $view['knp_menu']->render('FrontBundle:Builder:mainMenu'); ?>
 
 <?php $view['slots']->output('_content') ?>
