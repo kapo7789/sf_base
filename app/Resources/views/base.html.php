@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="<?php echo $view['assets']->getUrl('css/style.css'); ?>" />
     </head>
     <body>
-    	<div class="content">
+    	<div class="container-fluid">
         	<?php $view['slots']->output('_content') ?>
     	</div>
 	<script src="<?php echo $view['assets']->getUrl('js/bootstrap.min.js') ?>" type="text/javascript"></script>
